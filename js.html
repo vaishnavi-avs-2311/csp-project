@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kids Educational App - Home</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #6ecaec, #34a853);
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+  .study {
+    background-color: #3388ff;
+  }
+  .games {
+    background-color: #f57040;
+  }
+  .quests {
+    background-color: #f07a53;
+  }
+  .myroom {
+    background-color: #56b349;
+  }
+  .btn-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+   
+    <button class="btn study" onclick="window.location.href='study.html'">📖Study</button>
+
+    <button class="btn games" onclick="window.location.href='games.html'">🎮Games</button>
+
+    <button class="btn quests" onclick="window.location.href='quest.html'">✅Quests</button>
+    
+    <button class="btn myroom" onclick="window.location.href='myroom.html'">🏠My Room</button>
+  </div>
+</body>
+</html>
